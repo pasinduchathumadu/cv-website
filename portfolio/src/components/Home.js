@@ -4,36 +4,46 @@ import { AiOutlineArrowRight } from 'react-icons/ai';
 import { Link } from "react-scroll";
 
 const Home = () => {
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   const sentences = [
-    "Hi,I'm Pasindu",
+    "Hi, I'm Pasindu",
     "I am Full-Stack Developer",
     "Computer Science Undergraduate",
-    
-   
   ];
 
   const [currentSentenceIndex, setCurrentSentenceIndex] = useState(0);
+  const [currentWordIndex, setCurrentWordIndex] = useState(0);
 
   useEffect(() => {
+    const words = sentences[currentSentenceIndex].split(" ");
     const timer = setInterval(() => {
-      setCurrentSentenceIndex((prevIndex) => (prevIndex + 1) % sentences.length);
-    }, 5000);
+      if (currentWordIndex === words.length) {
+        setCurrentWordIndex(0);
+        setCurrentSentenceIndex((prevIndex) => (prevIndex + 1) % sentences.length);
+      } else {
+        setCurrentWordIndex((prevIndex) => prevIndex + 1);
+      }
+    }, 1000);
 
     return () => {
       clearInterval(timer);
     };
-  }, [sentences.length]);
+  }, [currentWordIndex, currentSentenceIndex, sentences]);
 
   return (
     <div name="home" className="h-screen w-full bg-gradient-to-b from-black to-gray-800 text-white">
-      <div className="max-w-screen-lg mx-auto flex flex-col items-center  h-full px-4 md:flex-row">
+      <div className="max-w-screen-lg mx-auto flex flex-col items-center h-full px-4 md:flex-row">
         <div className="flex flex-col justify-center h-full md:w-1/2 order-2 md:order-1">
-          <h2 className="text-4xl sm:text-6xl font-bold text-white"> {sentences[currentSentenceIndex]}</h2>
+          <h2 className="text-4xl sm:text-6xl font-bold text-white">
+            {sentences[currentSentenceIndex]
+              .split(" ")
+              .slice(0, currentWordIndex)
+              .join(" ")}
+          </h2>
           <p className="py-4 text-gray-500 max-w-md text-sm md:text-base">
-          I have 3 years of experience building and designing software.,
-    Currently, I love to work on web applications using technologies like React, Material UI, Node.js, and Express.js,
-    I enjoy solving complex problems and building user-friendly interfaces.
-           
+            I have 3 years of experience building and designing software.,
+            Currently, I love to work on web applications using technologies like React, Material UI, Node.js, and Express.js,
+            I enjoy solving complex problems and building user-friendly interfaces.
           </p>
           <div style={{ display: 'flex' }}>
             <div style={{ display: 'inline' }}>
@@ -54,7 +64,7 @@ const Home = () => {
                 to="portfolio"
                 smooth
                 duration={500}
-                className="group text-white w-fit px-14 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-slate-700 to-blue-500 cursor-pointer"
+                className="group text-white w-fit px-14 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-red-500 to-blue-100 cursor-pointer"
               >
                 Resume
               </Link>
@@ -71,15 +81,3 @@ const Home = () => {
 }
 
 export default Home;
-
-
-
-
-
-
-
-
-
-
-
-
