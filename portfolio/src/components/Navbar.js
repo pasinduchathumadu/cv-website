@@ -26,7 +26,7 @@ const Navbar = () =>{
         },
     ];
     return(
-        <div className="flex justify-between items-center w-full h-20 px-4 text-white fixed bg-black" >
+        <div className="flex justify-between items-center w-full h-20 px-4 text-white fixed bg-gray-900" >
             <div>
                 <h1 className="text-5xl font-signature ml-2">Pasindu</h1>
             </div>
@@ -35,7 +35,7 @@ const Navbar = () =>{
                    
                      <li
                      key={id}
-                      className="px-4 cursor-pointer capitalize font-medium text-gray-500 hover:scale-105 duration-200">
+                      className="px-4 cursor-pointer capitalize font-medium text-white-500 hover:scale-105 duration-200">
                         <Link to={link} smooth duration={200}>{link}</Link></li>
                 ))}
                

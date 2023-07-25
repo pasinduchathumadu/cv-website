@@ -4,6 +4,7 @@ import { AiOutlineArrowRight } from 'react-icons/ai';
 import { Link } from "react-scroll";
 
 const Home = () => {
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   const sentences = [
     "Hi, I'm Pasindu",
     "I am Full-Stack Developer",
