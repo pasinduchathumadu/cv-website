@@ -4,7 +4,6 @@ import { AiOutlineArrowRight } from 'react-icons/ai';
 import { Link } from "react-scroll";
 
 const Home = () => {
-  // eslint-disable-next-line react-hooks/exhaustive-deps
   const sentences = [
     "Hi, I'm Pasindu",
     "I am Full-Stack Developer",
@@ -73,7 +72,7 @@ const Home = () => {
         </div>
         <div className="md:w-1/2 md:order-2 ml-auto">
           {/* Updated image properties */}
-          <img src={pic1} alt="My Profile" className="rounded-full mx-auto w-80 h-80 md:w-96 md:h-96 border-4 border-black-500" />
+          <img src={pic1} alt="My Profile" className="rounded-full mx-auto w-80 h-96 md:w-96 md:h-120 border-4 border-black-500" />
         </div>
       </div>
     </div>
