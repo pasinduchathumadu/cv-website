@@ -8,7 +8,7 @@ const Home = () => {
   const sentences = [
     "Hi, I'm Pasindu",
     "I am Full-Stack Developer",
-    "Computer Science Undergraduate",
+    "Backend Development Enthusiast",
   ];
 
   const [currentSentenceIndex, setCurrentSentenceIndex] = useState(0);
@@ -34,7 +34,7 @@ const Home = () => {
     <div name="home" className="h-screen w-full bg-gradient-to-b from-black to-gray-800 text-white">
       <div className="max-w-screen-lg mx-auto flex flex-col items-center h-full px-4 md:flex-row">
         <div className="flex flex-col justify-center h-full md:w-1/2 order-2 md:order-1">
-          <h2 className="text-4xl sm:text-6xl font-bold text-white">
+          <h2 className="text-4xl sm:text-4xl font-bold text-white">
             {sentences[currentSentenceIndex]
               .split(" ")
               .slice(0, currentWordIndex)
@@ -53,7 +53,7 @@ const Home = () => {
                 duration={500}
                 className="group text-white w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer"
               >
-                Portfolio
+                Projects
                 <span className="group-hover:rotate-90 duration-300">
                   <AiOutlineArrowRight className="ml-1" />
                 </span>
@@ -64,7 +64,7 @@ const Home = () => {
                 to="portfolio"
                 smooth
                 duration={500}
-                className="group text-white w-fit px-14 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-red-500 to-blue-100 cursor-pointer"
+                className="group text-white w-fit px-14 py-3 my-2 flex items-center rounded-md bg-red-800 cursor-pointer"
               >
                 Resume
               </Link>
@@ -73,7 +73,7 @@ const Home = () => {
         </div>
         <div className="md:w-1/2 md:order-2 ml-auto">
           {/* Updated image properties */}
-          <img src={pic1} alt="My Profile" className="rounded-full mx-auto w-80 h-96 md:w-96 md:h-120 border-4 border-black-500" />
+          <img src={pic1} alt="My Profile" className="rounded-full mx-auto w-80 h-96 md:w-96 md:h-250 border-4 border-black-500" />
         </div>
       </div>
     </div>
