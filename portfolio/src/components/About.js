@@ -8,31 +8,31 @@ const About = () => {
           <p className="text-4xl font-bold inline border-b-4 border-gray-500">
             About
           </p>
-          <p className="text-xl mt-20">
+          <p className="text-xl mt-10 md:text-lg lg:text-xl">
             As an undergraduate at the University of Colombo School of Computing, I am Pasindu Chathumadu, driven by a passion for thinking out of the box. I excel in adapting quickly to newer technologies, effortlessly grasping their intricacies, and making sound technical decisions. My flexible nature and adept negotiation skills allow me to thrive in web and mobile application development. I eagerly anticipate the opportunity to be a collaborative team worker, efficient in time management, and contribute to meaningful projects.
           </p>
-          <div className="mt-20 flex items-center">
-            <div className="w-px h-full bg-gray-500 mx-8"></div>
-            <div className="flex flex-col">
+          <div className="mt-10 flex flex-col md:flex-row lg:flex-col items-center">
+            <div className="md:w-px lg:w-full md:h-full bg-gray-500 mx-0 md:mx-8 lg:mx-0 md:mb-0 lg:mb-4"></div>
+            <div className="flex flex-col md:items-center lg:items-start">
               <div className="flex items-center mb-4">
                 <div className="w-4 h-px bg-gray-500 mr-4"></div>
-                <span className="font-bold mr-4">FULL NAME</span>: Guruge Pasindu Chathumadu
+                <span className="font-bold mr-2 md:mr-4 lg:mr-2">FULL NAME</span>: Guruge Pasindu Chathumadu
               </div>
               <div className="flex items-center mb-4">
                 <div className="w-4 h-px bg-gray-500 mr-4"></div>
-                <span className="font-bold mr-3">BIRTH DATE</span>: May 23, 1999
+                <span className="font-bold mr-2 md:mr-3 lg:mr-2">BIRTH DATE</span>: May 23, 1999
               </div>
               <div className="flex items-center mb-4">
-                <div className="w-4 h-px bg-gray-500 mx-4"></div>
-                <span className="font-bold mr-14">JOB</span>: undergraduate at UCSC
+                <div className="w-4 h-px bg-gray-500 mx-0 md:mx-4 lg:mx-0"></div>
+                <span className="font-bold mr-2 md:mr-14 lg:mr-2">JOB</span>: undergraduate at UCSC
               </div>
               <div className="flex items-center mb-4">
                 <div className="w-4 h-px bg-gray-500 mr-4"></div>
-                <span className="font-bold mr-11">GITHUB</span>: pasinduchathumadu
+                <span className="font-bold mr-2 md:mr-11 lg:mr-2">GITHUB</span>: pasinduchathumadu
               </div>
               <div className="flex items-center">
                 <div className="w-4 h-px bg-gray-500 mr-4"></div>
-                <span className="font-bold mr-14">EMAIL</span>: pasindugura123@gmail.com
+                <span className="font-bold mr-2 md:mr-14 lg:mr-2">EMAIL</span>: pasindugura123@gmail.com
               </div>
             </div>
           </div>
