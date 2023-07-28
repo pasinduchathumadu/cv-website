@@ -15,10 +15,13 @@ const Resume = () => {
       <div className="flex justify-center">
         <div className="flex flex-wrap items-center justify-center">
           {items.map((item) => (
-            <div key={item.id} className="bg-white p-4 shadow-md rounded-lg mx-2 my-2 md:w-96">
+            <div
+              key={item.id}
+              className="bg-white p-4 shadow-md rounded-lg mx-2 my-2 md:w-96 w-full" // Use w-full to take full width on mobile
+            >
               {/* Use md:w-96 to set the width to 24rem for medium screens and above */}
               <h3 className="text-lg font-semibold mb-2">{item.title}</h3>
-              <p>{item.description}</p>
+              <p className="text-sm">{item.description}</p> {/* Adjust font size for mobile */}
             </div>
           ))}
         </div>
