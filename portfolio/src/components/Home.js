@@ -28,6 +28,7 @@ const Home = () => {
       clearInterval(timer);
     };
   }, [currentWordIndex, currentSentenceIndex, sentences]);
+  const resumeUrl = "/resume.pdf";
 
   return (
     <div name="home" className="h-screen w-full bg-gradient-to-b from-black to-gray-800 text-white">
@@ -54,14 +55,13 @@ const Home = () => {
                 <AiOutlineArrowRight className="ml-1" />
               </span>
             </Link>
-            <Link
-              to="portfolio"
-              smooth
-              duration={500}
-              className="group text-white w-fit px-14 py-3 my-2 flex items-center rounded-md bg-red-800 cursor-pointer"
-            >
-              Resume
-            </Link>
+            <a
+      href={resumeUrl}
+      download="resume.pdf"
+      className="group text-white w-fit px-14 py-3 my-2 flex items-center rounded-md bg-red-800 cursor-pointer"
+    >
+      Resume
+    </a>
           </div>
         </div>
         <div className="md:w-1/2 md:order-3 mt-10 md:mt-0">
