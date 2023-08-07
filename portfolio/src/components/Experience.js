@@ -12,7 +12,7 @@ import Mysql from "../assets/experience/MYSQL.png"
 import express from "../assets/experience/express.png"
 import C from '../assets/experience/c.png'
 import cl from "../assets/experience/c++.png"
-import py from "../assets/experience/python.png"
+import py from "../assets/experience/pic.webp"
 import postman from "../assets/experience/postman.png"
 const Experience = () => {
     
@@ -98,7 +98,7 @@ const Experience = () => {
           {
             id: 14,
             src: py,
-            title: "Python",
+            title: "Spring Boot",
             style: "shadow-gray-400",
           },
           {

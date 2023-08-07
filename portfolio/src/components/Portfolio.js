@@ -4,7 +4,7 @@ import installNode from "../assets/portfolio/second.png";
 import navbar from "../assets/portfolio/third.png";
 import resturant from "../assets/portfolio/pic3.png";
 import reactSmooth from "../assets/portfolio/pic4.png";
-import reactWeather from "../assets/portfolio/reactWeather.jpg";
+import reactWeather from "../assets/portfolio/pic.png";
 
 const Portfolio = () => {
   const portfolios = [
@@ -42,7 +42,7 @@ const Portfolio = () => {
     <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">
       <div className="pb-8">
         <p className="text-4xl font-bold inline border-b-4 border-gray-500">
-          Portfolio
+          Projects
         </p>
         <p className="py-6">Check out some of my work right here</p>
       </div>
