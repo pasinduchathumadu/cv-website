@@ -28,7 +28,7 @@ const Home = () => {
       clearInterval(timer);
     };
   }, [currentWordIndex, currentSentenceIndex, sentences]);
-  const resumeUrl = "../../public/pasindu.pdf";
+  const resumeUrl = "/resume.pdf";
 
   return (
     <div name="home" className="h-screen w-full bg-gradient-to-b from-black to-gray-800 text-white">
@@ -57,7 +57,7 @@ const Home = () => {
             </Link>
             <a
       href={resumeUrl}
-      download="pasindu.pdf"
+      download="resume.pdf"
       className="group text-white w-fit px-14 py-3 my-2 flex items-center rounded-md bg-red-800 cursor-pointer"
     >
       Resume
