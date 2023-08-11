@@ -28,7 +28,7 @@ const Home = () => {
       clearInterval(timer);
     };
   }, [currentWordIndex, currentSentenceIndex, sentences]);
-  const resumeUrl = "/pasindu.pdf";
+  const resumeUrl = "../../public/pasindu.pdf";
 
   return (
     <div name="home" className="h-screen w-full bg-gradient-to-b from-black to-gray-800 text-white">
