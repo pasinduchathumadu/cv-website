@@ -23,10 +23,10 @@ const SocialLinks = () => {
                     <>Mail<HiOutlineMail size={30}/></>
                     </a></li>
                     <li className="flex justify-between items-center w-40 h-14 px-4 bg-gray-500 ml-[-100px] hover:rounded-md duration-300 hover:ml-[-10px]">
-                    <a href="/pasindu.pdf" className="flex items-center justify-between w-full text-white" download='true' >
+                    <iframe src="/pasindu.pdf" className="flex items-center justify-between w-full text-white" download='true' >
                     {""}
                     <>Resume<BsFillPersonLinesFill size={30}/></>
-                    </a></li>
+                    </iframe></li>
             </ul>
 
         </div>
