@@ -56,7 +56,7 @@ const Home = () => {
               </span>
             </Link>
             <a
-      href={resumeUrl}
+      href= {process.env.PUBLIC_URL + '/resume.pdf'} 
       download="resume.pdf"
       className="group text-white w-fit px-14 py-3 my-2 flex items-center rounded-md bg-red-800 cursor-pointer"
     >
