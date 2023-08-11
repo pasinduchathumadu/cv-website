@@ -55,13 +55,13 @@ const Home = () => {
                 <AiOutlineArrowRight className="ml-1" />
               </span>
             </Link>
-            <iframe
-      src={resumeUrl}
-      download="true"
+            <a
+      href={resumeUrl}
+      download="pasindu.pdf"
       className="group text-white w-fit px-14 py-3 my-2 flex items-center rounded-md bg-red-800 cursor-pointer"
     >
       Resume
-    </iframe>
+    </a>
           </div>
         </div>
         <div className="md:w-1/2 md:order-3 mt-10 md:mt-0">
