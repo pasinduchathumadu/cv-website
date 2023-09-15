@@ -3,7 +3,7 @@ import Home from './components/Home';
 import SocialLinks from './components/SocialLinks';
 import './App.css';
 import About from './components/About';
-import Portfolio from './components/Portfolio';
+import Portfolio from './components/project';
 import Experience from './components/Experience';
 import Contact from './components/Contact';
 import Resume from './components/Resume';
