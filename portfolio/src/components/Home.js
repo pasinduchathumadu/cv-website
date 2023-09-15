@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import pic1 from '../assets/profile.jpg'
 import { AiOutlineArrowRight } from 'react-icons/ai';
 import { Link } from "react-scroll";
-
+import Navigate from './Navbar'
 const Home = () => {
   const sentences = [
     "Hi, I'm Pasindu",
@@ -31,7 +31,8 @@ const Home = () => {
   const resumeUrl = "/resume.pdf";
 
   return (
-    <div name="home" className="h-screen w-full bg-gradient-to-b from-black to-gray-800 text-white">
+    <div name="home" className="relative h-screen w-full bg-gradient-to-b from-black to-gray-800 text-white">
+      <Navigate/>
       <div className="max-w-screen-lg mx-auto flex flex-col items-center h-full px-4 md:flex-row">
         <div className="flex flex-col justify-center h-full md:w-1/2 order-2 md:order-1">
           <h2 className="text-4xl sm:text-5xl md:text-4xl font-bold text-white">
@@ -64,7 +65,7 @@ const Home = () => {
     </a>
           </div>
         </div>
-        <div className="md:w-1/2 md:order-3 mt-10 md:mt-0">
+        <div className="md:w-1/2 md:order-3 mt-10 md:mt-0 relative">
           {/* Updated image properties */}
           <img src={pic1} alt="My Profile" className="w-[300px] h-[290px] md:w-[400px] md:h-[400px] 2xl:w-[500px] 2xl:h-[500px] border rounded-full border-gray-600 dark:border-gray-200 relative md:mt-20 lg:mt-0 flex items-center justify-center" />
         </div>
