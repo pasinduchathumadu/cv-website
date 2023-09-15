@@ -6,7 +6,7 @@ import resturant from "../assets/portfolio/pic3.png";
 import reactSmooth from "../assets/portfolio/pic4.png";
 import reactWeather from "../assets/portfolio/pic.png";
 
-const Portfolio = () => {
+const Projects = () => {
   const portfolios = [
     {
       id: 1,
@@ -36,7 +36,7 @@ const Portfolio = () => {
 
   return (
     <div
-    name="portfolio"
+    name="projects"
     className="bg-gradient-to-b from-black to-gray-800 w-full md:h-screen text-white"
   >
     <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">
@@ -64,4 +64,4 @@ const Portfolio = () => {
   );
 }
 
-export default Portfolio;
+export default Projects;
